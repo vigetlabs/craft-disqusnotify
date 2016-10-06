@@ -1,0 +1,21 @@
+{% import "_includes/forms" as forms %}
+
+{% set title = "Disqus Notify Settings" | t %}
+
+<h2>Settings</h2>
+
+<p>This is the email that is sent to the author when a Disqus comment is added.</p>
+
+{{ forms.textField({
+  label: 'Subject',
+  name: 'emailSubject',
+  value: settings.emailSubject
+}) }}
+
+{{ forms.textareaField({
+  label: 'Body',
+  instructions: 'You have access to a Twig {{ author }} variable (<a href="http://buildwithcraft.com/docs/templating/usermodel">UserModel</a>), a Twig {{ entry }} variable (<a href="https://craftcms.com/docs/templating/entrymodel">EntryModel</a>), and a Twig {{ comment }} variable which is the actual text of the comment.',
+  name: 'emailBody',
+  value: settings.emailBody,
+  rows: 10
+}) }}
