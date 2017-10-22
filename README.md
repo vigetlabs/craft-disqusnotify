@@ -36,7 +36,7 @@ You need to pass the following pieces of data to the plugin:
 1. Entry ID
 1. Entry Author ID
 
-The URL that you need to `POST` to is `{{ actionUrl("disqusNotify/notify/notify") }}`
+The URL that you need to `POST` to is `{{ actionUrl("disqus-notify/notify/notify") }}`
 
 Here is an example of the plugin in action utilizing jQuery:
 
