@@ -2,7 +2,7 @@
     "name": "viget/craft-disqus-notify",
     "description": "Notify authors when a comment is added via Disqus.",
     "type": "craft-plugin",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-beta.23"
+        "craftcms/cms": "^3.0.0-RC1"
     },
     "repositories": [
         {
@@ -38,7 +38,7 @@
     "extra": {
         "name": "Disqus Notify",
         "handle": "disqus-notify",
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "2.0.1",
         "hasCpSettings": true,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/vigetlabs/craft-disqusnotify/master/CHANGELOG.md",
